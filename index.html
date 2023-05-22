@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement Generator</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <header class="header">
+        <div>
+            <p>Mezzanine Floor, International House, Mama Ngina Street, Nairobi</p>
+        <p>P.O. Box 73304-00200, Nairobi, Kenya</p>
+        <p>Tel: +254 (0) 2247950, 2210509</p>
+        <p>Fax: +254 (0) 2247954</p>
+        </div>
+        
+        <img class="pic"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU0pl85VFNRATGqXgvOL9FN9EH_oPkaZ0WSG8d1BesO8gu55YQZ4TlNPh5TiWHKLjHVA&usqp=CAU" width="100px" height="250px">
+    </header>
+    <div class="main">
+    <div>
+        <h3>Settlement Statement</h3>
+        <p>TO WHOM IT MY CONCERN</p>
+        <P>Dear Sir/Madam</P>
+        <p>Re: Loan Balance</p>
+        <div class="details">
+        <p>Name<input type="text" id="Name"></p>
+        <p class="ID">ID Number<input type="text"></p>
+    </div>
+    <div class="employee">
+        <p>Employee Number:<input type="text"></p>
+        <p>Employer<input type="text"></p>
+    </div>
+        
+     <div class="loan-datails">
+        <p>Loan ID<input class="input" type="number" name="" id="loan-ID"  ></p>
+        <p>effective Date<input class="input" type="date" name="" id="date"></p>
+        <p>Loan Amount<input onchange="calculateBalance()" class="input" type="number" name="" id="loan-amount" min="3000" max="1000000" value="100000"></p>
+        <p>Term<input onchange="calculateBalance()"  class="input" type="number" name="" id="term" min="1" max="120" value="120" ></p>
+        <p>Duration<input  onchange="calculateBalance()" class="input" type="number" name="" id="duration" min="1" max="120" value="120"></p>
+        <p >Interest to date:<input class="input" id="interest"></p>
+        <p>Admin fee <input class="input" type="number"  id="admin-fee"></p>
+        <p>Insurance Fee<input class="input"  type="number" id="insurance-fee"></p>
+        <p>Settlement fee<input class="input" type="number" id="settlement-fee"></p>
+        <p>Sub Total<input onchange="calculateBalance()" class="input" type="number"  id="sub-total"></p>
+        <p>Total Payments<input onchange="calculateBalance()" class="input" type="number" id="total-payments"></p>
+        <p>Current Balance<input class="input" type="number" name="current-balance" id="current-balance" ></p>
+        
+        
+        </div>
+        <p>Total debt outstanding:<input type="number" name="" id="Total-debt-outstanding"></p>
+        
+
+    </div>
+       <p>Prepared by …………………...…………………………….. Delinquency Department, Applewood Branch</p> 
+       <p>Sign off by the customer at the bottom of the settlement statement</p>
+       <p>1. An admin fee of Kes 3000 will be charged for processing settlement in addition to the monthly admin fee.</p>
+       <p>2. Clearance documents will be available within 14 days from the  date of receiving payment confirmation.</p>
+       <p>"I   SALOME NYOKABI MUNGAI  of ID No.13275921
+         request PLATINUM CREDIT LTD to settle my loan as per this statement and I accept the Terms and Conditions herein. </p>
+        <p>Signature________________________________ Date____________________________</p>
+        <p>Kindly present a copy of this statement with payment at our offices</p>
+        <p>Salary Advance Loans MUST be Settled Before Clearing Check-off Loans.</p>
+        <p>Cash payments can be remitted to: Bank:NCBA   A/C NO: 6953960017  Branch Name: Mama Ngina  Account Name: Platinum Credit LTD OR:Mpesa Pay bill Number 810902: A/C(Customer's ID No.)</p>
+        <p>Cheque payments should be strictly drawn to "Platinum Credit Ltd".</p>
+        <p>Please attach a copy of this statement,latest payslip and proof of payment for clearance.</p>
+        <p>Should you pay before the expiry of the statement, Platinum Credit Ltd will refund any excess amount levied.</p>
+        <p>NB: This statement is valid for 14 days from date of issue.</p>
+        <p>Directors:Eng IG Wanjohi(Chairman), BI Sievwright*, **WB Barratt, IM Obara, MG Ngige, Skybound Capital Limited *, *South African **Zimbabwean.</p>
+    </div>    
+    <script src="index.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
